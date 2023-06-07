@@ -1,0 +1,15 @@
+.cardForm {
+    display: flex;
+    justify-content: center;
+    
+    & > * {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .cardForm {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,24 @@
+@import '../../styles/settings.scss';
+@import '../Container/Container.module.scss';
+
+.nav {
+    background-color: darken($color-dark, 3%);
+}
+
+.a {
+    color: white;
+    text-decoration: none;
+}
+
+.ul {
+    list-style-type: none;
+}
+
+.i {
+    font-size: 24px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,6 +1,6 @@
-import List from '../List/List';
 import Hero from '../Hero/Hero';
 import SearchForm from '../SearchForm/SearchForm';
+import Lists from '../Lists/Lists';
 import styles from './Home.module.scss';
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
     <div>
       <Hero />
       <SearchForm />
-      <List />
+      <Lists />
     </div>
   );
 };

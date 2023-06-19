@@ -9,8 +9,10 @@ const Lists = () => {
         <div className={styles.container}>
             {lists.map(list =>
                 <div className={styles.box}>
-                    <h2 className={styles.title}>{ list.title }</h2>
-                    <p className={styles.description}>{ list.description }</p>
+                    <a href='/'>
+                        <h2 className={styles.title}>{list.title}</h2>
+                        <p className={styles.description}>{list.description}</p>
+                    </a>
                 </div>
             )}
         </div>

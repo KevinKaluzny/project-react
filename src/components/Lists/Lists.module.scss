@@ -1,0 +1,16 @@
+@import '../../styles/settings.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    background-color: $color-light;
+    border-radius: $radius;
+    margin: $base-size;
+    padding: $base-size;
+    color: $color-dark;
+    width: 400px;
+}

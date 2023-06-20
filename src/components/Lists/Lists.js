@@ -1,6 +1,7 @@
 import styles from './Lists.module.scss';
 import { getAllLists } from '../../redux/store';
 import { useSelector } from 'react-redux';
+import ListForm from '../ListForm/ListForm';
 
 const Lists = () => {
     const lists = useSelector(state => getAllLists(state));
@@ -15,6 +16,7 @@ const Lists = () => {
                     </a>
                 </div>
             )}
+            <ListForm />
         </div>
     );
 }

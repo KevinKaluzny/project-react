@@ -12,6 +12,9 @@
 
 .ul {
     list-style-type: none;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
 }
 
 .i {

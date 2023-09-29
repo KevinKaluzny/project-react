@@ -3,6 +3,7 @@
 
 .nav {
     background-color: darken($color-dark, 3%);
+    display: flex;
 }
 
 .a {
@@ -12,6 +13,9 @@
 
 .ul {
     list-style-type: none;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
 }
 
 .i {
@@ -21,4 +25,5 @@
 .row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }

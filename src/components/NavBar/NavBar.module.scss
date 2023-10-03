@@ -11,6 +11,10 @@
     text-decoration: none;
 }
 
+.linkActive {
+    color: $color-warning;
+}
+
 .ul {
     list-style-type: none;
     display: flex;

@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Container from '../Container/Container';
 import styles from './NavBar.module.scss';
+import clsx from 'clsx';
 
 const Navbar = () => {
     return (
@@ -12,9 +13,9 @@ const Navbar = () => {
                     </div>
                     <div className={styles.col}>
                         <ul className={styles.ul}>
-                            <li><Link className={styles.a} to='/'>Home</Link></li>
-                            <li><Link className={styles.a} to='/favorite'>Favorite</Link></li>
-                            <li><Link className={styles.a} to='/about'>About</Link></li>
+                            <li><NavLink className={({ isActive }) => clsx(isActive ? styles.linkActive : undefined, styles.a)} to='/'>Home</NavLink></li>
+                            <li><NavLink className={({ isActive }) => clsx(isActive ? styles.linkActive : undefined, styles.a)} to='/favorite'>Favorite</NavLink></li>
+                            <li><NavLink className={({ isActive }) => clsx(isActive ? styles.linkActive : undefined, styles.a)} to='/about'>About</NavLink></li>
                         </ul>
                     </div>
                 </div>

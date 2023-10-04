@@ -1,5 +1,7 @@
+import { Link, NavLink } from 'react-router-dom';
 import Container from '../Container/Container';
 import styles from './NavBar.module.scss';
+import clsx from 'clsx';
 
 const Navbar = () => {
     return (
@@ -7,13 +9,13 @@ const Navbar = () => {
             <Container>
                 <div className={styles.row}>
                     <div className={styles.col}>
-                        <a className={styles.a} href='/'><i className={styles.i + " fa-solid fa-bars"}></i></a>
+                        <Link className={styles.a} to='/'><i className={styles.i + " fa-solid fa-bars"}></i></Link>
                     </div>
                     <div className={styles.col}>
                         <ul className={styles.ul}>
-                            <li><a className={styles.a} href='/'>Home</a></li>
-                            <li><a className={styles.a} href='/favorite'>Favorite</a></li>
-                            <li><a className={styles.a} href='/about'>About</a></li>
+                            <li><NavLink className={({ isActive }) => clsx(isActive ? styles.linkActive : undefined, styles.a)} to='/'>Home</NavLink></li>
+                            <li><NavLink className={({ isActive }) => clsx(isActive ? styles.linkActive : undefined, styles.a)} to='/favorite'>Favorite</NavLink></li>
+                            <li><NavLink className={({ isActive }) => clsx(isActive ? styles.linkActive : undefined, styles.a)} to='/about'>About</NavLink></li>
                         </ul>
                     </div>
                 </div>

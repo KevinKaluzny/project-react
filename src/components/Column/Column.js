@@ -2,7 +2,7 @@ import styles from './Column.module.scss';
 import Card from '../Card/Card';
 import CardForm from '../CardForm/CardForm';
 import { useSelector } from 'react-redux';
-import { getFilteredCards } from '../../redux/store';
+import { getFilteredCards } from '../../redux/searchStringRedux';
 
 const Column = props => {
     const cards = useSelector(state => getFilteredCards(state, props.id));

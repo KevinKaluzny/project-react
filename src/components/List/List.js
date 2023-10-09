@@ -2,7 +2,8 @@ import styles from './List.module.scss';
 import Column from '../Column/Column';
 import ColumnForm from '../ColumnForm/ColumnForm';
 import { useSelector } from 'react-redux';
-import { getColumnsById, getListById } from '../../redux/store';
+import getColumnsById from '../../redux/columnsRedux';
+import getListById from '../../redux/listsRedux';
 import { useParams } from 'react-router';
 
 const List = () => {
